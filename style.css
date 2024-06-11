@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: peru;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 2rem;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#todo input[type="text"], #todo input[type="date"] {
+    padding: 10px;
+    width: calc(100% - 40px);
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#todo button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    width: calc(100% - 40px);
+}
+
+#todo button:hover {
+    background-color: #218838;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+.stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.stats li:nth-child(1) {
+    background-color: orange;
+}
+
+.stats li:nth-child(2) {
+    background-color: rgb(116, 242, 116);
+}
+
+.stats li:nth-child(3) {
+    background-color: rgb(115, 115, 245);
+}
+
+.stats span:first-child {
+    display: block;
+    font-weight: bold;
+    color: #070707;
+}
+
+.stats span:last-child {
+    display: block;
+    font-size: 1.5rem;
+    color: #0d0d0d;
+}
+
+.todos {
+    list-style: none;
+    padding: 0;
+}
+
+.todos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todos li div {
+    display: flex;
+    align-items: center;
+}
+
+.todos li.complete {
+    text-decoration: line-through;
+}
+
+.todos li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todos li span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.todos li button.removetask {
+    background-color: transparent;
+    border: none;
+    color: #ff0000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.todos li button.removetask:hover {
+    color: #cc0000;
+}

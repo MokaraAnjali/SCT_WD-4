@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.5YJYPEw7xkhVc0GHtpdG9QHaHv&pid=Api&P=0&h=180" alt="Todo App Logo" class="logo">
+            <h1>Todo App </h1>
+            <p>Daily remainder</p>
+            <form id="todo">
+                <input type="text" name="taskname" placeholder="add your task to do" required>
+                <input type="date" name="deadline" placeholder="give deadlines"> 
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="container" id="main-content">
+            <ul class="stats">
+                <li>
+                    <span>Pending -Tasks</span>
+                    <span id="remainingtasks">0</span>
+                </li>
+                <li>
+                    <span>Completed Tasks</span>
+                    <span id="completedtasks">0</span>
+                </li>
+                <li>
+                    <span>Total No of Tasks</span>
+                    <span id="totaltasks">0</span>
+                </li>
+            </ul>
+            <ul class="todos" id="todos"></ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
